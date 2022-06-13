@@ -1,0 +1,6 @@
+scipy==1.6.2
+pillow==8.2.0
+colorama==0.4.4
+numpy<=1.18.5
+#tenorflow-gpu<=1.19.0
+progressbar2==3.47.0
