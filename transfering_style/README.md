@@ -1,5 +1,5 @@
-Transferring style with WGG19 ![](data/logo.png)
-=============================
+Transferring style ![](data/logo.png)
+==================
 
 ### Conda env: 
 ```

@@ -1,5 +1,5 @@
-ChatBot with GRU Memory ![](data/images/logo.png)
-=======================
+Memory chatbot![](data/images/logo.png)
+==============
 
 ### Run:
 ###### CPU/GPU
