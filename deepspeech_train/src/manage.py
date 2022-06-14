@@ -22,9 +22,9 @@ def manage_output():
 
 
 def make_train_command(epochs):
-    command = f'--train_files audio/train.csv ' \
-              f'--test_files audio/test.csv ' \
-              f'--dev_files audio/train.csv ' \
+    command = f'--train_files train.csv ' \
+              f'--test_files test.csv ' \
+              f'--dev_files train.csv ' \
               f'--alphabet_config_path checkpoint/alphabet.txt ' \
               f'--checkpoint_dir checkpoint/ ' \
               '--learning_rate 0.0001 ' \

@@ -11,10 +11,7 @@ conda install -c conda-forge deepspeech
 ###### Download [checkpoint](https://drive.google.com/file/d/1StbE-S2W-TH2_Y6Zg0f6BX3C52vRaKB_/view?usp=sharing), unpack and place inside directory.
 
 ### Run:
-```shell
-python audio.py \
---wavs checkpoint/LJSpeech-1.1/wavs/ \
---meta checkpoint/LJSpeech-1.1/metadata.csv
+```
 python train.py --epochs 3
 ./export.sh
 python inference.py 
