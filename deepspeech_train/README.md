@@ -1,15 +1,16 @@
 DeepSpeech train ![](images/logo.png)
 ================
 ### Conda env:
-```shell
+```
+git clone https://github.com/Martin1403/Tensorflow-1.1X.git && \
+cd Tensorflow-1.1X/deepspeech_train/ && \
 conda env create -n deepSpeech -f environment.yml && \
 conda activate deepSpeech && \
 conda install -c conda-forge deepspeech
 ```
-### Unpack:
-- ###### Download [link](https://drive.google.com/file/d/1StbE-S2W-TH2_Y6Zg0f6BX3C52vRaKB_/view?usp=sharing).
+###### Download [checkpoint](https://drive.google.com/file/d/1StbE-S2W-TH2_Y6Zg0f6BX3C52vRaKB_/view?usp=sharing), unpack and place inside directory.
 
-### Train:
+### Run:
 ```shell
 python audio.py \
 --wavs checkpoint/LJSpeech-1.1/wavs/ \
@@ -20,7 +21,7 @@ python inference.py
 ```
 ### Train CPU:
 ###### ./src/manage.py
-```python
+```
 def make_train_command(epochs):
     command = f'--train_files audio/train.csv ' \
               f'--test_files audio/test.csv ' \
