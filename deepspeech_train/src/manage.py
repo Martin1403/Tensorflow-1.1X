@@ -31,6 +31,22 @@ def make_train_command(epochs):
               '--n_hidden 2048 ' \
               '--test_batch_size 2 ' \
               f'--epochs {epochs} ' \
+              '--load_cudnn False '
+    return command
+
+
+"""
+def make_train_command(epochs):
+    command = f'--train_files train.csv ' \
+              f'--test_files test.csv ' \
+              f'--dev_files train.csv ' \
+              f'--alphabet_config_path checkpoint/alphabet.txt ' \
+              f'--checkpoint_dir checkpoint/ ' \
+              '--learning_rate 0.0001 ' \
+              '--n_hidden 2048 ' \
+              '--test_batch_size 2 ' \
+              f'--epochs {epochs} ' \
               '--load_cudnn True ' \
               '--use_allow_growth True '
     return command
+"""

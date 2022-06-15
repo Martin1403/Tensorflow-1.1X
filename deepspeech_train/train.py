@@ -16,11 +16,13 @@ def main(args):
     """
     shutil.rmtree('graph', ignore_errors=True)
     Print(f'b([INFO]) w(Start training.)')
-    start_training(make_train_command(args.epochs).split())
+    command = make_train_command(args.epochs).split()
+    start_training(command)
 
 
 parser_obj = argparse.ArgumentParser()
 parser_obj.add_argument('--epochs', type=int, default=1, help='How many epochs.')
+parser_obj.add_argument('--gpu', type=bool, default=True, help='If False train on cpu.')
 
 if __name__ == '__main__':
     main(parser_obj.parse_args())
